@@ -44,6 +44,8 @@ output_pollution11 <- multisim_wrapper(
 )
 output_pollution11
 write.csv(output_pollution11, file = "output_pollution11.csv", row.names = FALSE)
+shell.exec(file.path(getwd(), "output_pollution11.csv"))
+system2("open", file.path(getwd(), "output_pollution11.csv"))
 
 set.seed(3650)
 
