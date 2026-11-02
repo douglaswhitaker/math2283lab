@@ -14,6 +14,11 @@ output_pollution11_0 <- multisim_wrapper(
   num_sim = 1000,
   simplify_output_table = TRUE
 )
+write.csv(output_pollution11_0, file = "output_pollution11_0.csv", row.names = FALSE)
+shell.exec(file.path(getwd(), "output_pollution11_0.csv"))
+# Stop here to review the output in Excel.
+
+
 output_pollution11_5 <- multisim_wrapper(
   context1 = "pollution11",
   increase_mean_by_vec = c(5),
@@ -22,6 +27,11 @@ output_pollution11_5 <- multisim_wrapper(
   num_sim = 1000,
   simplify_output_table = TRUE
 )
+write.csv(output_pollution11_5, file = "output_pollution11_5.csv", row.names = FALSE)
+shell.exec(file.path(getwd(), "output_pollution11_5.csv"))
+# Stop here to review the output in Excel.
+
+
 output_pollution11_10 <- multisim_wrapper(
   context1 = "pollution11",
   increase_mean_by_vec = c(10),
@@ -30,35 +40,10 @@ output_pollution11_10 <- multisim_wrapper(
   num_sim = 1000,
   simplify_output_table = TRUE
 )
+write.csv(output_pollution11_10, file = "output_pollution11_10.csv", row.names = FALSE)
+shell.exec(file.path(getwd(), "output_pollution11_10.csv"))
+# Stop here to review the output in Excel.
 
-
-set.seed(3650)
-
-output_pollution11 <- multisim_wrapper(
-  context1 = "pollution11",
-  increase_mean_by_vec = c(0, 5, 10),
-  n1_vec = c(5, 10, 20, 40),
-  n2_vec = c(5, 10, 20, 40),
-  num_sim = 1000,
-  simplify_output_table = TRUE
-)
-output_pollution11
-write.csv(output_pollution11, file = "output_pollution11.csv", row.names = FALSE)
-shell.exec(file.path(getwd(), "output_pollution11.csv"))
-system2("open", file.path(getwd(), "output_pollution11.csv"))
-
-set.seed(3650)
-
-output_pollution11_10k <- multisim_wrapper(
-  context1 = "pollution11",
-  increase_mean_by_vec = c(0, 5, 10),
-  n1_vec = c(5, 10, 20, 40),
-  n2_vec = c(5, 10, 20, 40),
-  num_sim = 10000,
-  simplify_output_table = TRUE
-)
-output_pollution11_10k
-write.csv(output_pollution11_10k, file = "output_pollution11_10k.csv", row.names = FALSE)
 
 
 # Context: swedishinfants -------------------------------------------------
@@ -74,8 +59,10 @@ output_swedishinfants <- multisim_wrapper(
   num_sim = 1000,
   simplify_output_table = TRUE
 )
-output_swedishinfants
 write.csv(output_swedishinfants, file = "output_swedishinfants.csv", row.names = FALSE)
+shell.exec(file.path(getwd(), "output_swedishinfants.csv"))
+# Stop here to review the output in Excel.
+
 
 
 # Context: derriford_interrarival_AEC1 ------------------------------------
@@ -90,9 +77,10 @@ output_derriford_interrarival_AEC1 <- multisim_wrapper(
   num_sim = 1000,
   simplify_output_table = TRUE
 )
-
-output_derriford_interrarival_AEC1
 write.csv(output_derriford_interrarival_AEC1, file = "output_derriford_interrarival_AEC1.csv", row.names = FALSE)
+shell.exec(file.path(getwd(), "output_derriford_interrarival_AEC1.csv"))
+# Stop here to review the output in Excel.
+
 
 
 # Context: watervelocity1 -------------------------------------------------
@@ -106,6 +94,6 @@ output_watervelocity1 <- multisim_wrapper(
   num_sim = 1000,
   simplify_output_table = TRUE
 )
-
-output_watervelocity1
 write.csv(output_watervelocity1, file = "output_watervelocity1.csv", row.names = FALSE)
+shell.exec(file.path(getwd(), "output_watervelocity1.csv"))
+# Stop here to review the output in Excel.
