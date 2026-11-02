@@ -1,0 +1,11 @@
+Package: math2283lab
+Title: MATH 2283 Lab Package
+Version: 0.0.0.9000
+Authors@R: 
+    person("Douglas", "Whitaker", , "douglas.whitaker@msvu.ca", role = c("aut", "cre"))
+Description: This package contains functions for use in the lab for MATH 2283.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.1.0
