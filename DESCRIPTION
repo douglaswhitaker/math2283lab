@@ -1,6 +1,6 @@
 Package: math2283lab
 Title: MATH 2283 Lab Package
-Version: 0.1.0.0
+Version: 0.1.1.0
 Authors@R: 
     person(given = "Douglas", family = "Whitaker", email = "douglas.whitaker@msvu.ca", role = c("aut", "cre"))
 Description: This package contains functions for use in the lab for MATH 2283.

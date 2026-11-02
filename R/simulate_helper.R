@@ -170,6 +170,7 @@ multisim_wrapper <- function(
           n1 = n1_vec[j],
           n2 = n2_vec[j],
           return_lists = TRUE,
+          num_sim = num_sim,
           ...)
       #browser()
       multisim_output_df <-
